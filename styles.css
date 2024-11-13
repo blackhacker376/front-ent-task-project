@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.box {
+    border: 2px solid #FFB6C1;
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: height 0.3s ease;
+}
+
+.box h3 {
+    font-size: 1.2em;
+    color: #FF1493;
+}
+
+.price {
+    font-size: 1em;
+    color: #000;
+}
+
+.options {
+    display: none;
+}
+
+.box.expanded .options {
+    display: block;
+    margin-top: 10px;
+}
+
+button#addToCart {
+    padding: 10px 20px;
+    background-color: #FF1493;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
